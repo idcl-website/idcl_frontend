@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FoundersApply() {
     return (
-        <section className="bg-white w-full flex flex-col items-center justify-center gap-8">
+        <section className="bg-white w-full flex flex-col items-center justify-center gap-8" id="application_form">
             <h1 className="text-[#000] font-satoshi text-2xl sm:text-3xl lg:text-[32px] font-bold leading-[110%] capitalize text-center mb-8">
                 Ready to Join the Founders Development Program?
             </h1>

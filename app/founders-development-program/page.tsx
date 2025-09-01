@@ -7,6 +7,7 @@ import FoundersProgram from "@/components/sections/founders/program";
 import FoundersFaqs from "@/components/sections/founders/faqs";
 import { names } from "@/data/elllipse";
 import FoundersApply from "@/components/sections/founders/apply";
+import FoundersPartners from "@/components/sections/founders/partners";
 export default function FoundersDevelopmentProgram() {
     return (
         <>
@@ -14,6 +15,7 @@ export default function FoundersDevelopmentProgram() {
             <FoundersDevelopmentHakathon />
             <FoundersProgram />
             <FoundersLearn />
+            <FoundersPartners />
             <FoundersApply />
             <FoundersQualification />
             <FoundersFaqs />

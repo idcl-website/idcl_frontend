@@ -1,49 +1,62 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import { useState } from "react";
 const Questions = [
     {
+        id: 1,
         question: "Do I need to already have a startup or business idea?",
         answer: "No. This program is about developing founders, not just startups. You don’t need an idea — we’ll help you discover, validate, and build opportunities.",
     },
     {
+        id: 2,
         question: "Is the program really free?",
         answer: "Yes, 100% free. The program is fully sponsored by Imo State Government and powered by Imo Digital City in partnership with USMAC.",
     },
     {
+        id: 3,
         question: "Who can apply",
         answer: "Nigerian citizens, ideally between 20–30 years old, with ambition, curiosity, and commitment. Priority is given to applicants from Imo State and the Southeast, but it is open nationwide.",
     },
     {
+        id: 4,
         question: "How long is the program?",
         answer: "It’s a year-long journey, with in-person bootcamps in Owerri and structured remote mentorship phases.",
     },
     {
+        id: 5,
         question: "Will I get funding if I join?",
         answer: "This is not a grant or funding program. However, you’ll gain mentorship, global networks, and investor visibility — which often leads to funding opportunities later.",
     },
     {
+        id: 6,
         question: "What will I gain from the program?",
         answer: "You’ll gain founder mindset training, startup execution skills, global exposure, mentorship from Silicon Valley experts, and the chance to compete for a place in the final Silicon Valley immersion.",
     },
     {
+        id: 7,
         question: "Do I need to quit my job or school to join?",
         answer: "No. You don’t need to quit, but you must be able to commit to the schedule (in-person bootcamps, remote intensives, and team projects)",
     },
     {
+        id: 8,
         question: "How are participants selected?",
         answer: "Selection is based on mindset, coachability, problem-solving drive, and commitment — not on prior business success. Both AI pre-screening and human reviewers will evaluate applicants.",
     },
     {
+        id: 9,
         question: "What happens after the program?",
         answer: "You’ll join the IDCL Alumni Network, with continued access to mentors, opportunities, and future programs. The goal is to set you up for long-term success as a founder.",
     },
     {
+        id: 10,
         question: "How do I apply?",
         answer: "Click “Apply Now” on the official portal, fill out your profile and essays, and submit before the deadline. Shortlisted applicants will be notified by email and SMS.",
     },
 ];
 
 export default function FoundersFaqs() {
+    const [openFaq, setOpenFaq] = useState<number | null>();
     return (
         <section className="relative w-full mb-20 mt-20">
             <Image
@@ -78,14 +91,14 @@ export default function FoundersFaqs() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col w-full lg:w-[605px] max-h-[550px] overflow-y-auto items-center gap-[19px]">
+                    <div className="flex flex-col w-full lg:w-[605px] items-center gap-[19px]">
                         {Questions.map((item, index) => (
                             <div
                                 key={index}
                                 className="flex flex-col p-5 items-start gap-4 w-full rounded-[11px] bg-white shadow-sm"
                             >
-                                <div className="flex justify-between items-center w-full">
-                                    <h1 className="font-poppins font-bold text-[18px] lg:text-[20px] leading-[28px] text-[#2A3342]">
+                                <div className="flex gap-10 items-center w-full">
+                                    <h1 className="font-poppins font-bold text-[18px] lg:text-[20px] leading-[28px] text-[#2A3342] flex-1 py-2 cursor-pointer" onClick={() => setOpenFaq(index)}>
                                         {item.question}
                                     </h1>
                                     <Image
@@ -95,13 +108,16 @@ export default function FoundersFaqs() {
                                         height={24}
                                         className="object-cover"
                                         quality={100}
+                                        onClick={() => setOpenFaq(index)}
                                     />
                                 </div>
-                                {item.answer && (
-                                    <p className="font-poppins text-[14px] lg:text-[16px] font-medium leading-[22px] lg:leading-[24px] text-[#556987]">
-                                        {item.answer}
-                                    </p>
-                                )}
+                                {openFaq === index && <div className={`transition-all duration-300 ${openFaq === index ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"}`}>
+                                    {item.answer && (
+                                        <p className={`font-poppins text-[14px] lg:text-[16px] font-medium leading-[22px] lg:leading-[24px] text-[#556987] ${openFaq === index ? "opacity-100" : "opacity-0"}`}>
+                                            {item.answer}
+                                        </p>
+                                    )}
+                                </div>}
                             </div>
                         ))}
                     </div>

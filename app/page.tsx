@@ -16,7 +16,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
-  const [dialogOpen, setDialogOpen] = useState(true);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   return (
     <>

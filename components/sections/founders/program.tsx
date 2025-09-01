@@ -68,7 +68,7 @@ export default function FoundersProgram() {
                 {TourProcess.map((item, index) => (
                     <motion.div
                         key={index}
-                        className="relative w-full sm:w-[280px] lg:w-[264px] flex-shrink-0 flex flex-col items-start"
+                        className="relative w-full sm:w-[280px] lg:w-[264px] flex flex-col items-center"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.2 }}
@@ -87,19 +87,19 @@ export default function FoundersProgram() {
                         }}
                     >
                         <h1
-                            className="font-poppins absolute top-[-30px] sm:top-[-45px] lg:top-[-70px] left-[-5px] sm:left-[-8px] lg:left-[-11px] font-bold text-[80px] sm:text-[120px] lg:text-[160px] leading-[100px] sm:leading-[150px] lg:leading-[200px]"
+                            className="font-poppins font-bold text-[80px] sm:text-[120px] lg:text-[160px] leading-[100px] sm:leading-[150px] lg:leading-[200px]"
                             style={{ color: item.color, opacity: "0.1" }}
                         >
                             {item.stage}
                         </h1>
-                        <div className="flex w-full sm:w-[280px] lg:w-[264px] h-auto lg:h-[203px] py-[24px] sm:py-[30px] lg:py-[36px] px-[20px] sm:px-[25px] lg:px-[30px] flex-col items-start gap-[15px] sm:gap-[20px] lg:gap-[25px]">
+                        <div className="flex w-full sm:w-[280px] lg:w-[264px] h-auto lg:h-[203px] pb-[24px] sm:pb-[30px] lg:pb-[36px] px-[20px] sm:px-[25px] lg:px-[30px] flex-col items-center gap-[15px] sm:gap-[20px] lg:gap-[25px]">
                             <p className="text-[#000] text-center font-satoshi text-[16px] sm:text-[18px] lg:text-[20px] font-bold">
                                 {item.header}
                             </p>
                             <p className="font-satoshi text-[14px] sm:text-[15px] lg:text-[16px] leading-[18px] sm:leading-[19.5px] lg:leading-[21px] font-medium text-center text-[#475467] self-stretch">
                                 {item.body}
                             </p>
-                            <div className="w-full flex flex-col gap-[10px] sm:gap-[12px] lg:gap-[15px]">
+                            <div className="w-full flex flex-col gap-[10px] sm:gap-[12px] lg:gap-[15px] w-max">
                                 {item.list.map((listItem, listIndex) => (
                                     <div
                                         key={listIndex}

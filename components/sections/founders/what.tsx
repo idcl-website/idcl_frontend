@@ -10,12 +10,13 @@ export default function FoundersDevelopmentHakathon() {
                 <Image
                     src="/images/founders/founder.png"
                     alt="founders-group"
-                    fill
+                    width={400}
+                    height={260}
                     priority
-                    className="object-contain rounded-xl shadow-lg"
+                    className="object-cover rounded-xl shadow-lg h-full w-full"
                 />
             </div>
-            <div className="w-full max-w-[500px] flex flex-col items-center justify-center text-center gap-4">
+            <div className="w-full max-w-[500px] flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-4">
                 <h1 className="font-satoshi text-2xl sm:text-3xl md:text-5xl font-bold mb-2">From Owerri to the World!!</h1>
                 <p className="list-disc list-inside text-base sm:text-lg md:text-xl text-[#222] space-y-2">
                     Welcome to the IDCL Founders Development Program — a no-fluff, high-intensity, year-long journey designed to turn raw potential into world-class founders. More than training, this is a transformation process: equipping ambitious young people with the mindset, skills, and global networks needed to thrive on the world stage. Powered by Imo Digital City, in partnership with the US Market Access Center (USMAC)

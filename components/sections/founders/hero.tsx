@@ -63,7 +63,7 @@ export default function FoundersDevelopmentProgramPage() {
 
             {/* Content Container */}
             <motion.div
-                className="absolute top-8 md:top-[150px] left-0 md:left-10 right-0 w-full px-4 sm:px-6 md:px-8 max-w-full flex flex-col gap-6 sm:gap-8 md:gap-[15px] items-center lg:items-start z-20"
+                className="absolute h-full left-0 md:left-10 right-0 w-full px-4 sm:px-6 md:px-8 max-w-full flex flex-col gap-6 sm:gap-8 md:gap-[15px] items-center lg:items-start justify-center z-20"
                 initial={{ opacity: 0, y: 60 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
@@ -74,7 +74,7 @@ export default function FoundersDevelopmentProgramPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
                 >
-                    IDCL founders development program
+                    IDCL Founders Development Program
                 </motion.h1>
 
                 <motion.div
@@ -90,16 +90,17 @@ export default function FoundersDevelopmentProgramPage() {
                     variants={buttonVariants}
                     className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-[24px] w-full justify-center lg:justify-start"
                 >
-                    <Dialog>
-                        <DialogTrigger asChild>
-                            <button
+                    {/* <Dialog>
+                        <DialogTrigger asChild> */}
+                            <a
                                 className="rounded-[56px] py-3 sm:py-4 md:py-[16px] px-4 sm:px-5 md:px-[22px] bg-[#005DFF] text-white flex items-center justify-center gap-2 sm:gap-[10px] font-roboto font-medium transition-all hover:bg-[#003399] text-sm sm:text-base w-full sm:w-auto h-[50px]"
                                 type="button"
+                                href="#application_form"
                             >
                                 Register Interest
-                            </button>
-                        </DialogTrigger>
-                        <DialogContent
+                            </a>
+                        {/* </DialogTrigger> */}
+                        {/* <DialogContent
                             className="bg-white max-w-[98vw] sm:max-w-[95vw] lg:max-w-[600px] border border-[#E4E4E4] shadow-xl p-0 overflow-y-auto max-h-[90vh] rounded-[16px]"
                         >
                             <DialogHeader>
@@ -124,17 +125,17 @@ export default function FoundersDevelopmentProgramPage() {
                                     </div>
                                 </DialogDescription>
                             </DialogHeader>
-                        </DialogContent>
-                    </Dialog>
+                        </DialogContent> */}
+                    {/* </Dialog> */}
 
-                    <Link
-                        href="/hackathon/guide.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a
+                        // href="/#"
+                        // target="_blank"
+                        // rel="noopener noreferrer"
                         className="rounded-[56px] py-3 sm:py-4 md:py-[16px] px-4 sm:px-5 md:px-[22px] bg-white text-[#005DFF] flex items-center justify-center gap-2 sm:gap-[10px] font-roboto font-medium transition-all hover:bg-gray-100 text-sm sm:text-base w-full sm:w-auto h-[50px] border border-[#005DFF]"
                     >
                         Download Program Guide
-                    </Link>
+                    </a>
                 </motion.div>
             </motion.div>
         </motion.section>

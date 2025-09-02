@@ -5,12 +5,24 @@ import Image from "next/image";
 
 const partners = [
     {
-        image: '/images/partners/us.jpeg',
-        body: 'USMAC'
+        image: '/images/partners/chris-burry-headshot.jpeg',
+        name: "Christ Burry",
+        desc: 'USMAC CEO'
     },
     {
-        image: '/images/partners/imo.png',
-        body: 'Imo State Government'
+        image: '/images/partners/ken-singer.jpeg',
+        name:"Ken Singer",
+        desc: 'Chief Learning Officer of the UC Berkeley Sutardja Center for Entrepreneurship and Technology'
+    },
+    {
+        image: '/images/partners/David-Law-Leadership-1.jpg',
+        name: "David Law",
+        desc: 'Director of Global Programs, UC Berkeley Sutardja Center for Entrepreneurship and Technology'
+    },
+    {
+        image: '/images/partners/steve-adelman.jpeg',
+        name:"Steve Adelman",
+        desc: 'USMAC Lead Mentor'
     },
 ]
 
@@ -37,20 +49,25 @@ const FoundersPartners = () => {
                         visible: { opacity: 1 }
                     }}
                 >
-                    Meet our Experts
+                    Meet our Partners
                 </motion.h1>
-                <div className="flex gap-2">
+                <div className="w-full flex gap-6">
                     {partners.map((item, index) => (
-                        <div key={index} className="flex items-center gap-2">
-                            <Image
-                                src={item.image}
-                                alt={item.body}
-                                width={120}
-                                height={120}
-                                priority
-                                className="object-contain"
-                            />
-                            {/* <p className="text-base sm:text-lg md:text-xl text-[#222]">{item.body}</p> */}
+                        <div key={index} className="flex flex-col items-start gap-2 w-[400px] h-[400px]">
+                            <div className="w-full">
+                                <Image
+                                    src={item.image}
+                                    alt={item.desc}
+                                    width={500}
+                                    height={500}
+                                    priority
+                                    className="object-cover rounded-[10px] w-full h-ful border border-black/20"
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <p className="text-[#222] text-lg font-semibold">{item.name}</p>
+                                <p className="text-base text-slate-500">{item.desc}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

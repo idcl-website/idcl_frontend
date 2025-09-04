@@ -137,6 +137,8 @@ export default function UpcomingEventCom() {
                                     day={new Date(event.startDate).getDate().toString()}
                                     month={new Date(event.startDate).toLocaleString('default', { month: 'long' })}
                                     time={new Date(event.startDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                                    url={event.url}
+                                    id = {event._id}
                                 />
                             </div>
                         ))

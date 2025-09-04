@@ -18,6 +18,11 @@ export const eventsService = {
             }
         })
         return response.data;
+    },
+
+    getOneEvent: async (id: string) => {
+        const response = await axiosInstance.get(`event/${id}`)
+        return response.data;
     }
 
 

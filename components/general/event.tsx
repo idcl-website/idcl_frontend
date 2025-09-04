@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 type EventItem = {
     image: string;
     name: string;
@@ -8,9 +9,11 @@ type EventItem = {
     day: string;
     month: string;
     time: string;
+    url: string;
+    id: string;
 };
 
-export default function EventDisplay({ image, name, description, tagline, day, month, time }: EventItem) {
+export default function EventDisplay({ image, name, description, tagline, day, month, time, url, id }: EventItem) {
     return (
         <div className="w-full max-w-[362px] h-[430px] mx-auto flex flex-col items-center bg-white rounded-[18px] shadow border border-[#E1ECFF] overflow-hidden">
             {/* Image Container */}
@@ -29,9 +32,9 @@ export default function EventDisplay({ image, name, description, tagline, day, m
             <div className="flex-1 w-full py-4 px-5 sm:py-5 sm:px-6 rounded-b-[18px] flex flex-col gap-3 justify-between">
                 {/* Header Section */}
                 <div className="flex flex-col gap-2 flex-1">
-                    <h1 className="text-black font-satoshi text-lg sm:text-xl font-bold leading-6 sm:leading-7 truncate capitalize">
+                    <Link href={`/event/${name}?id=${id}`} className="text-black font-satoshi text-lg sm:text-xl font-bold leading-6 sm:leading-7 truncate capitalize">
                         {name}
-                    </h1>
+                    </Link>
 
                     <div className="bg-black w-fit px-3 py-1 rounded-[15px] border border-[rgba(0,0,0,0.23)]">
                         <p className="font-satoshi text-white text-xs sm:text-sm font-bold leading-5 truncate capitalize">

@@ -9,8 +9,8 @@ type EventItem = {
     day: string;
     month: string;
     time: string;
-    url: string;
-    id: string;
+    url?: string;
+    id?: string;
 };
 
 export default function EventDisplay({ image, name, description, tagline, day, month, time, url, id }: EventItem) {

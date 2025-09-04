@@ -32,7 +32,7 @@ export default function EventDisplay({ image, name, description, tagline, day, m
             <div className="flex-1 w-full py-4 px-5 sm:py-5 sm:px-6 rounded-b-[18px] flex flex-col gap-3 justify-between">
                 {/* Header Section */}
                 <div className="flex flex-col gap-2 flex-1">
-                    <Link href={`/event/${name}?id=${id}`} className="text-black font-satoshi text-lg sm:text-xl font-bold leading-6 sm:leading-7 truncate capitalize">
+                    <Link href={`/event/${name}?embedUrl=${url}`} className="text-black font-satoshi text-lg sm:text-xl font-bold leading-6 sm:leading-7 truncate capitalize">
                         {name}
                     </Link>
 

@@ -45,7 +45,7 @@ export default function EventPage({params}: {params: {slug: string}}) {
     // },[iframeRef])
 
     return (
-        <div className="w-full h-screen watch">
+        <div className="w-full h-[88vh] watch">
             <iframe 
                 src={`${url}`} 
                 frameBorder="0" 

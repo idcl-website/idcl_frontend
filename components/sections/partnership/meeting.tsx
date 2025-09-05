@@ -32,12 +32,6 @@ const GlobalPartnersCollection = [
         website: 'https://zinoxtechnologies.com/'
     },
     {
-        image: '/images/partners/berkeley.png',
-        header: 'University of California, Berkeley',
-        body: "Through its SkyDeck accelerator, UC Berkeley offers Imo-based startups access to world-class incubation, mentorship, and funding, bridging Nigerian innovation with global opportunities",
-        website: 'https://www.berkeley.edu/'
-    },
-    {
         image: '/images/partners/silicon.png',
         header: 'Silicon Valley Ecosystem',
         body: "Driving digital transformation, the Imo State Government's initiatives like Skill-Up Imo aim to train over 100,000 youths in digital technologies, positioning the state as Nigeria's tech hub.",

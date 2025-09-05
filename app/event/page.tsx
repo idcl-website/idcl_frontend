@@ -11,14 +11,18 @@ import UpcomingEventCom from "@/components/general/upcoming";
 
 export default function EventsPage() {
     return (
-        <>
-            <HeroSection />
-            <EventsInnovation />
-            <UpcomingEventCom />
-            <EventsTech />
-            <EventsHub />
-            <EventsWhyUs />
-            <GeneralEllipse name={names.events} />
-        </>
+        <section className="w-full h-[88vh]">
+            <iframe src="https://office.imodigitalcity.com/event" frameBorder="0" width="100%" height="100%" className="w-full h-[88vh]">
+            </iframe>
+        </section>
+        // <>
+        //     <HeroSection />
+        //     <EventsInnovation />
+        //     <UpcomingEventCom />
+        //     <EventsTech />
+        //     <EventsHub />
+        //     <EventsWhyUs />
+        //     <GeneralEllipse name={names.events} />
+        // </>
     )
 }

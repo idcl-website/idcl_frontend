@@ -36,13 +36,13 @@ export default function UniqueNews() {
 
     return (
         <>
-            <div className="px-4 sm:px-6 lg:px-0">
+            <div className="px-4 sm:px-6 lg:px-0 bg-[#F9F9F9]">
                 {blog === null ? (
                     <p className="text-md text-gray-400">No news updated or found. Visit again soon</p>
                 ) : (
                     <>
                         {/* Main Blog Content */}
-                        <div className="w-full max-w-[1200px] py-8 md:py-[50px] mx-auto space-y-6">
+                        <div className="w-full max-w-[85vw] bg-white p-8 md:py-[50px] mx-auto space-y-6">
                             <div className="w-full flex flex-col items-start gap-3 md:gap-[15px]">
                                 <h2 className="w-full font-bold text-lg sm:text-xl lg:text-[24px] text-[#061A2E] font-satoshi leading-tight md:leading-normal">
                                     {blog.title}
@@ -65,7 +65,7 @@ export default function UniqueNews() {
                                     src={blog?.image!}
                                     alt="latest-news-photo"
                                     fill
-                                    className="object-cover rounded-[10px]"
+                                    className="object-contain rounded-[10px]"
                                     priority
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
                                 />

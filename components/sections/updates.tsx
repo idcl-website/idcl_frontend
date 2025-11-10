@@ -93,7 +93,7 @@ export default function Updates() {
 
     return (
         <motion.section
-            className="w-full min-h-screen lg:h-screen bg-[#F5F9FF] py-8 sm:py-12 lg:py-[68px] flex flex-col items-center gap-6 sm:gap-8 lg:gap-[26px] px-4 sm:px-6"
+            className="w-full min-h-screen lg:min-h-screen bg-[#F5F9FF] py-8 sm:py-12 lg:py-[68px] flex flex-col items-center gap-6 sm:gap-8 lg:gap-[26px] px-4 sm:px-6"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -132,16 +132,16 @@ export default function Updates() {
                     }}
                 >
                     <motion.div
-                        className="flex flex-row items-stretch gap-4 sm:gap-6 lg:gap-[33.48px] min-w-[340px] sm:min-w-[700px] md:min-w-[1000px] lg:min-w-[1198px]"
+                        className="flex flex-row justify-center items-stretch gap-4 sm:gap-6 lg:gap-[33.48px] min-w-[340px] sm:min-w-[700px] md:min-w-[1000px] lg:min-w-[1198px]"
                         style={{ scrollSnapType: 'x mandatory' }}
                         variants={containerVariants}
                     >
-                        {(news.concat(news).length === 0) ? (
+                        {(news.length === 0) ? (
                             <div className="w-full flex items-center justify-center py-16">
                                 <p className="text-gray-500 text-lg font-semibold">No news available.</p>
                             </div>
                         ) : (
-                            news.concat(news).map((item, index) => (
+                            news.map((item, index) => (
                                 <motion.div
                                     key={index}
                                     className="relative flex-shrink-0 w-[90vw] sm:w-[340px] md:w-[380px] lg:w-[381.77px] h-auto lg:h-[407.77px] flex flex-col gap-4 sm:gap-6 lg:gap-[15.76px] bg-white rounded-[16px] shadow-md transition-shadow duration-300 hover:shadow-xl"

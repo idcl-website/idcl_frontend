@@ -14,6 +14,7 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogDescription } from "@/components/ui/dialog";
 import Link from "next/link";
 import Image from "next/image";
+import SkillUpAd from "@/components/sections/skillUpAd/SkillUpAd";
 
 export default function Header() {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -26,6 +27,7 @@ export default function Header() {
       <Objectives isObjective={true} />
       <Services isServices={true} />
       <Updates />
+      <SkillUpAd />
       <Testimonials />
       <Partners />
       <GeneralEllipse name={names.home} />

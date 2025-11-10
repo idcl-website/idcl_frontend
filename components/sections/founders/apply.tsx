@@ -1,37 +1,25 @@
+import { X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FoundersApply() {
     return (
-        <section className="bg-white w-full flex flex-col items-center justify-center gap-8" id="application_form">
-            <h1 className="text-[#000] font-satoshi text-2xl sm:text-3xl lg:text-[32px] font-bold leading-[110%] capitalize text-center mb-8">
-                Ready to Join the Founders Development Program?
-            </h1>
-
-            {/* Wrapper for form + image */}
-            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 w-full max-w-[1200px] px-4 sm:px-6 lg:px-0">
-                <div className="flex-1 w-full max-w-[500px]">
-                    <Image
-                        src="/images/founders/program.jpeg"
-                        alt="Founders Program"
-                        width={700}
-                        height={700}
-                        className="w-full h-auto object-cover rounded-[12px] shadow-lg"
-                    />
-                </div>
-
-                <form className="flex-1 w-full max-w-[720px]">
-                    <iframe
-                        src="https://office.imodigitalcity.com/founderdojo"
-                        title="Partnership Application"
-                        width="100%"
-                        height="600"
-                        className="w-full min-h-[400px] rounded-[12px] border-0"
-                        allowFullScreen
-                    ></iframe>
-                </form>
-
-                {/* Image Section */}
+        <section className="w-full px-16 pb-16 flex justify-center gap-24">
+            <div className="w-[40%]">
+                <h1 className="text-4xl mb-4">Ready to Join the Founders Development Program?</h1>
+                <p className="text-base mb-5 text-[rgb(100,116,139)]">
+                    Embark on a transformative 5-stage journey designed to turn your entrepreneurial vision into a thriving global business. 
+                </p>
+                <Link href="/founders-development-program/apply" className="bg-[rgb(0,93,255)] text-white px-5 py-3 rounded-md hover:bg-[rgb(0,93,255)]/80 transition-all shadow-lg active:scale-95 ease-in-out duration-200">Apply Now</Link>
             </div>
+            <div className="flex items-center gap-4">
+                <img src="/images/founders/usmac.jpeg" alt="" width={150}/>
+                <X size={50} className="font-light"/>
+                <img src="/images/logo2.png" alt="" width={150}/>
+            </div>
+            {/* <div className="w-[60%]">
+                <Image src="/images/founders/apply.png" alt="Founders Development Program" />
+            </div> */}
         </section>
     );
 }

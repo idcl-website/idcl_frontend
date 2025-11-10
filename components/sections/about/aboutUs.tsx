@@ -28,7 +28,7 @@ export default function AboutUsWho() {
                 </motion.h2>
 
                 <motion.p
-                    className="w-full font-satoshi font-normal leading-[1.5] sm:leading-[1.3] lg:leading-[100%] tracking-[0em] text-[#000000] text-base sm:text-lg lg:text-[18px] text-center"
+                    className="w-full font-satoshi font-normal leading-[1.5] sm:leading-[1.3] lg:leading-normal tracking-[0em] text-[#000000] text-base text-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
@@ -38,7 +38,7 @@ export default function AboutUsWho() {
                 </motion.p>
 
                 <motion.p
-                    className="w-full font-satoshi font-normal leading-[1.5] sm:leading-[1.3] lg:leading-[100%] tracking-[0em] text-[#000000] text-base sm:text-lg lg:text-[20px] text-center"
+                    className="w-full font-satoshi font-normal leading-[1.5] sm:leading-[1.3] lg:leading-normal tracking-[0em] text-[#000000] text-base text-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}

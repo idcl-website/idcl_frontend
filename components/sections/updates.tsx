@@ -93,7 +93,7 @@ export default function Updates() {
 
     return (
         <motion.section
-            className="w-full min-h-screen lg:h-[724px] bg-[#F5F9FF] py-8 sm:py-12 lg:py-[68px] flex flex-col items-center gap-6 sm:gap-8 lg:gap-[26px] px-4 sm:px-6"
+            className="w-full min-h-screen lg:h-screen bg-[#F5F9FF] py-8 sm:py-12 lg:py-[68px] flex flex-col items-center gap-6 sm:gap-8 lg:gap-[26px] px-4 sm:px-6"
             variants={containerVariants}
             initial="hidden"
             animate="visible"

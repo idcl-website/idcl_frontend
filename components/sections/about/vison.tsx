@@ -35,11 +35,11 @@ export default function AboutUSVision() {
                 transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <div className="w-full lg:w-[599px] flex items-start gap-4 sm:gap-6 lg:gap-[25px]">
-                    <Image src='/images/vision/eyes.png' width={63} height={63} priority alt="vision-image" />
+                <div className="w-full lg:w-[599px] flex items-start gap-4 sm:gap-6 lg:gap-[10px]">
+                    <Image src='/images/vision/eyes.svg' width={35} height={35} priority alt="vision-image" />
                     <div className="flex flex-col items-start gap-4 md:gap-[12px]">
                         <motion.h2
-                            className="font-satoshi font-bold text-2xl sm:text-3xl lg:text-[32px] leading-[1.1] tracking-normal text-[#3B3B3B]"
+                            className="font-satoshi font-bold text-2xl sm:text-3xl leading-[1.1] tracking-normal text-[#3B3B3B]"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
@@ -48,7 +48,7 @@ export default function AboutUSVision() {
                             Our Vision
                         </motion.h2>
                         <motion.p
-                            className="font-satoshi font-light text-base sm:text-lg lg:text-[20px] leading-[1.3] sm:leading-[1.2] lg:leading-[1] tracking-normal text-[#000000]"
+                            className="text-base sm:text-lg lg:text-[20px] leading-normal tracking-normal text-[#000000]"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
@@ -59,11 +59,11 @@ export default function AboutUSVision() {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-[599.18px] flex items-start gap-4 sm:gap-6 lg:gap-[25px]">
+                <div className="w-full lg:w-[599.18px] flex items-start gap-4 sm:gap-6 lg:gap-[10px]">
                     <Image src='/images/vision/mission.png' width={63} height={63} priority alt="vision-image" />
                     <div className="flex flex-col items-start gap-4 md:gap-[12px]">
                         <motion.h2
-                            className="font-satoshi font-bold text-2xl sm:text-3xl lg:text-[32px] leading-[1.1] tracking-normal text-[#3B3B3B]"
+                            className="font-satoshi font-bold text-2xl sm:text-3xl leading-[1.1] tracking-normal text-[#3B3B3B]"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
@@ -72,7 +72,7 @@ export default function AboutUSVision() {
                             Our Mission
                         </motion.h2>
                         <motion.p
-                            className="font-satoshi font-light text-base sm:text-lg lg:text-[20px] leading-[1.3] sm:leading-[1.2] lg:leading-[1] tracking-normal text-[#000000]"
+                            className="text-base sm:text-lg lg:text-[20px] leading-normal tracking-normal text-[#000000]"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}

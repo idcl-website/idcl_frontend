@@ -70,4 +70,5 @@ export default function AboutUsHeroSection() {
             </motion.div>
         </motion.section>
     )
+
 }

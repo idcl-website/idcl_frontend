@@ -5,9 +5,13 @@ import Navigation from "./navigation";
 import MobileMenu from "./mobileMenu";
 import { useMobileMenuStore } from "@/stores/useMobileMenuStore";
 import { Menu } from "lucide-react";
+import { useParams } from "next/navigation";
 
 export default function Header() {
     const { toggleMenu } = useMobileMenuStore();
+    // if(window.location.href.includes('/registration')){
+    //     return null
+    // }
 
     return (
         <>

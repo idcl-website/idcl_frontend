@@ -10,7 +10,7 @@ export default function FoundersApply() {
                 <p className="text-base mb-5 text-[rgb(100,116,139)]">
                     Embark on a transformative 5-stage journey designed to turn your entrepreneurial vision into a thriving global business. 
                 </p>
-                <Link href="/founders-development-program/apply" className="bg-[rgb(0,93,255)] text-white px-5 py-3 rounded-md hover:bg-[rgb(0,93,255)]/80 transition-all shadow-lg active:scale-95 ease-in-out duration-200">Apply Now</Link>
+                <Link href="/founders-development-program/registration" className="bg-[rgb(0,93,255)] text-white px-5 py-3 rounded-md hover:bg-[rgb(0,93,255)]/80 transition-all shadow-lg active:scale-95 ease-in-out duration-200">Apply Now</Link>
             </div>
             <div className="flex items-center gap-4">
                 <img src="/images/founders/usmac.jpeg" alt="" width={150}/>

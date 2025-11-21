@@ -17,7 +17,7 @@ import Image from "next/image";
 import SkillUpAd from "@/components/sections/skillUpAd/SkillUpAd";
 
 export default function Header() {
-  const [dialogOpen, setDialogOpen] = useState(false);
+  const [dialogOpen, setDialogOpen] = useState(true);
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function Header() {
               <div className="relative w-full h-[93vh] min-h-[400px] rounded-[16px] overflow-hidden">
                 {/* Use object-contain to ensure the whole image is visible */}
                 <Image
-                  src="/images/founders_dev/SILICON_VALLEY@IDCL.jpg"
+                  src="/images/founders_dev/founders_dev.jpg"
                   alt="Silicon valley Founders development training"
                   fill
                   className="object-contain w-full h-full"
@@ -59,7 +59,7 @@ export default function Header() {
                 {/* Register Now button */}
                 <div className="absolute bottom-6 right-6 flex justify-end w-auto z-20">
                   <Link
-                    href="/founders-development-program#application_form"
+                    href="/founders-development-program/registration"
                     className="px-6 py-2 rounded-full bg-[#005DFF] text-white font-semibold hover:bg-[#003399] transition shadow-lg border-2 border-white drop-shadow-lg"
                     style={{ background: 'rgba(0,93,255,0.95)' }}
                   >
